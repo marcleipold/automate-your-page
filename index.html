@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - A Pen by  Marc Leipold</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <div class="stage">
+    <h1>Stage 2: Telling Computers What to Do</h1>
+    <h3>Unit 4: Intro to "Serious" Programming</h3>
+
+  <div class="box">
+    <h4>What is Programming?</h4>
+     <div class="description">
+      <p>
+        A web crawler finds web pages for the search engine by starting a seed page and following links on that page to other pages, each of those, link to new web pages which can have new links to other pages.  As we follow the links we'll find more and more web pages building a collection of data that we'll use for our search engine.  A link is a special type of text in that web page.
+      </p>
+      <dl>
+        <dt>Computer</dt>
+          <dd>
+            a machine that can execute a program- with the right program, a computer can do any mechanical computation you can imagine
+          </dd>
+        <br>
+        <dt>Program</dt>
+          <dd> 
+            a very precise sequence of steps- since the computer is just a machine, the 	program must give the steps in a way that can be executed mechanically- that is, the program can 	be followed without any thought
+          </dd>
+        <br>
+        <dt>Programming</dt>
+          <dd>
+             a language designed for producing computer programs- a good programming language makes it easy for humans to read and write programs that can be executed by a computer
+          </dd>
+        <br>
+        <dt>Python</dt>
+          <dd>
+            a programming language- the programs that we write in the Python language will be the input to the Python interpreter, which is a program that runs on the computer- the Python interpreter reads our programs and executes them by following the rules of the Python language
+          </dd>
+        </dl>
+     </div>
+  </div>
+
+  <div class="box">
+    <h4>Getting Started with Python<img class="pythonimg" alt="Here is the Python logo!" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR614jnm5UlIZUQthXb1IGTf_x6QQB0ZvLPvxAm95gjfdYZedN9FQ"></h4>
+     <div class="description">
+      <p>
+        2 parts to screen: editor & output window
+        We can see the value of something in Python by using print like this:
+      </p>
+      <ul>
+        <li>print 3...</li>
+        <li>prints out the value 3</li> 
+      </ul>
+      <p>
+        The expression after the print can be any value Python expression. Here are some examples:
+      </p>
+      <ul>
+        <li>1 + 1    addition</li>
+        <li>2 - 1    subtraction</li>
+        <li>2 * 6    multiplication</li>
+      </ul>
+      <p>
+        We can compose expressions to make more complicated expressions like: 
+      </p>
+      <ul>
+        <li>52 * 3 +12 * 9</li>
+      </ul>
+      <p>
+        We can also use parentheses to group expressions: 
+      </p>
+      <ul>
+        <li>(52 * 3) + (12 * 9)</li>
+      </ul>
+      <p>
+        is different from
+      </p>
+      <ul>
+        <li>52 * (3 + 12) * 9</li>
+      </ul>
+      <p>
+        For example, this code prints out the the number of hours in a day: 
+      </p>
+      <ul>
+        <li>print 365 * 24 * 60 * 60</li>
+      </ul>
+     </div>
+  </div>
+
+  <div class="box">
+    <h4>Language Ambiguity</h4>
+     <div class="description">
+      <p>
+        Why write in Python instead of normal English?  
+      </p>
+      <ol>
+        <li>Natural languages are ambiguous ( open to more than one interpretation- a computer will run programs with the meaning we intended, thus we must kow exactly what our programs mean)</li>
+        <li>Natural languages are very verbose (wordy- to say something with the level of precision needed for a computer to be able to follow it mechanically would require an awful lot of writing)</li>
+      </ol>
+      <p>
+        Our goal in writing a program is for it to be short, so it is less work to write them, and easier to read and understand them.
+      </p>
+     </div>
+  </div>
+
+  <div class="box">
+    <h4>Grammar</h4>
+     <div class="description">
+      <p>
+        Unlike a natural language, programming languages adhere to a strict grammatical structure.  In English, even if something is said or written incorrectly, it can still be understood with the help of context or other cues.  In programming, the code must match the language grammar exactly.  The Python interpreter has no idea what to do with input that is not in the Python language.
+      </p>
+      <ul>
+        <li>Basic English Grammar Rules:
+          <ul>
+            <li>sentence--subject, verb, noun</li>
+            <li>subject--noun</li>
+            <li>object--noun</li>
+            <li>verb--eat</li>
+            <li>verb--like</li>
+            <li>noun--I</li>
+            <li>noun--Python</li>
+            <li>noun--cookies</li>
+          </ul>
+        </li>
+      </ul>
+      <p>
+        If programming grammar is not followed, the interpreter will return a syntax error; this means the structure of the code is inconsistent with the rules of the programming language.  Backus-Naur Form is used to describe a programming language in a simple and concise manner.
+      </p>
+      <ul>
+        <li>&lt;non-terminal>-->replacement&gt;</li>
+      </ul>
+      <p>
+        The "replacement" can be any sequence of zero, more-terminals, or more non-terminals. Terminals never appear on the left side of a rule.  Once you get a terminal there is nothing else you can replace it with.
+      </p>
+      <ul>
+        <li>sentence--subject verb noun</li>
+        <li>sentence--noun verb object</li>
+        <li>sentence--I verb object</li>
+        <li>sentence--I like object</li>
+        <li>sentence--I like noun</li>
+        <li>sentence--I like Python</li>
+      </ul>
+      <p>
+        In the above example, the "I like Python" has been replaced with ALL terminals, therefore it can't be replaced anymore.
+      </p>
+     </div>
+  </div>
+
+  <div class="box">
+    <h4>Python Expressions</h4>
+     <div class="description">
+      <p>
+        An expression is something that has a value.  Examples of expressions in Python:
+      </p>
+      <ul>
+        <li>3</li>
+        <li>1+1</li>
+        <li>7*7*24*60</li>
+      </ul>
+      <p>
+        One of the rules of Python grammar for making expressions:  Expression--&gt;Expression Operator Expression.  The Expression non-terminal on the left can be replaced by an Expression, followed by an Operator, followed by another Expression.  It can have an Expression on both the left and right sides; this may look circular, and would be except for other rules for Expressions that don't include Expression on the right.  This is an example of recursive definition (we'll see more in Unit 6).  To have good recursive definition, we need two rules:
+      </p>
+      <ol>
+        <li>A rule that defines something in terms of itself. (Expression--&gt;Expression Operator Expression)
+        <li>A rule that defines that thing in terms of something else that we already know. (Expression--&gt;Number)
+      </ol>
+      <p>
+        Recursive definitions are a powerful idea in Computer Science.  They allow us to define infinitely many things using a few simple rules.  More on that in Unit 6... Here are some Python grammar rules for arithmetic expressions:
+      </p>
+      <ul>
+        <li>expression--&gt;expression operator expression</li>
+        <li>expression--&gt;number</li>
+        <li>operator--&gt;+</li>
+        <li>operator--&gt;*</li>
+        <li>number--&gt;0,1,...</li>
+      </ul>
+      <p>
+        Here is an example of derivation using this grammar:
+      </p>
+      <ul>
+        <li>Expression--&gt;Expression Operator Expression
+          <ul>
+            <li>--&gt;Expression + Expression</li>
+            <li>--&gt;Expression + Number</li>
+            <li>--&gt;Expression + 1</li>
+            <li>--&gt;Expression Operator Expression + 1</li>
+            <li>--&gt;Number Operator Expression + 1</li>
+            <li>--&gt;2 Operator Expression + 1</li>
+            <li>--&gt;2 * Expression + 1</li>
+            <li>--&gt;2 * Expression Operator Expression + 1</li>
+            <li>--&gt;2 * Number Operator Expression + 1</li>
+            <li>--&gt;2 * 3 Operator Expression + 1</li>
+            <li>--&gt;2 * 3 * Expression + 1</li>
+            <li>--&gt;2 * 3 * Number + 1</li>
+            <li>--&gt;2 * 3 * 3 + 1</li>
+          </ul>
+        </li>
+      </ul>
+      <p>
+        We only have to add one more rule to our expression grammar to be able to produce all the expressions we have used so far: expression--&gt;(expression)
+      </p>
+     </div>
+  </div><!--end of unit 4-->
+
+  <h3>Unit 5: Variables and Strings</h3>
+
+  <div class="box">
+    <h4>Basics of Variables and Strings</h4>
+     <div class="description">
+      <p>
+        Variables use an assignment statement, such as:
+      </p>
+      <ul>
+        <li>name=expression</li>
+        <li>speed_of_light=299792458</li>
+        <li>speed_of_light refers to value--&gt;299792458</li>
+      </ul>
+      <p>
+        So we can use variables to reference values/data, instead of using an actual value.  Variables can...vary (crazy, right?) so we can update our expression.  Also there is no hard fast rule, but typically variables shouldn't be Capitalized.  It's important to remember that "=" is an assignment, it doesn't mean that the values are equal!
+      </p>
+      <p>
+        Strings are a sequence of characters surrounded by quotes.  We can use single or double quotes.  The advantage to double quotes is that you can use single quotes inside of doube quotes.
+      </p>
+      <ul>
+        <li>name="dianna"</li>
+        <li>name='dianna'</li>
+      </ul>
+      <p>
+        The + in strings is concatenation (a linking of things together in a series) of the two strings.
+      </p>
+      <ul>
+        <li>print "hello"+name</li>
+        <li>so as not to say "hellodianna", add space after "hello "</li>
+        <li>can't add a string and number together; however, we can multiply them (print "!"*3--&gt; will give you 3 !'s)</li>
+      </ul>
+     </div>
+  </div> 
+</div>
+
+</body>
+
+</html>
